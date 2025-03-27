@@ -1,0 +1,37 @@
+:root{
+    --card-backkground-color: #FFFFFF;
+    --text-color-primary: #1c252e;
+    --boxShadows-card: 0 0 2px 0 rgba(145 158 171 / 0.2), 0 12px 24px -4px rgba(145 158 171 / 0.12) ;
+    --palette-text-disabled: #919eab;
+    --spacing: 8px;
+    --palette-primary-main: #00a76f;
+    --palette-action-activeChannel: 99 115 129;
+    --palette-action-hoverOpacity: 0.08;
+    --palette-dashed-bordedr: #919EAB44;
+    --delete-alert: #ff5630;
+    --palette-action-hover: rgba(145 158 171 / 0.08);
+    --palette-grey-500Channel: 145 158 171;
+    --palette-info-mainChannel:0 184 217;
+
+
+}
+*,
+*::before,
+*::after {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    z-index: 0;
+}
+
+html {
+    font-size: 30px;
+}
+
+
+@media (max-width: 680px) {
+    html {
+        font-size: 20px;
+    }
+}
