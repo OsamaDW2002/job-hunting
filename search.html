@@ -9,12 +9,103 @@
     rel="stylesheet"/>
 </head>
 <body>
-    <div class="search-container">
-        <input type="text" id="job-search" placeholder="Search...">
-        <i class="ri-search-line"></i>
+    <div class="search-filter-wrapper">
+        <div class="search-container">
+            <input type="text" id="job-search" placeholder="Search...">
+            <i class="ri-search-line"></i>
         </div>
+    
+        <div class="filter-button-group">
+            <div class="filter-button">
+                <span>Filters</span>
+                <i class="ri-filter-3-line"></i>
+            </div>
+    
+            <div class="filter-button sort-button" id="sortToggle">
+                <span>Sort by: <span id="sortLabel">Latest</span></span>
+                <i class="ri-arrow-down-s-line"></i>
+                <div class="sort-menu" id="sortMenu">
+                    <div class="sort-option" data-value="latest">Latest</div>
+                    <div class="sort-option" data-value="popular">Popular</div>
+                    <div class="sort-option" data-value="oldest">Oldest</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Sidebar Filter Panel -->
+<div id="filter-sidebar" class="filter-sidebar">
+    <div class="filter-header">
+        <h2>Filters</h2>
+        <div class="filter-header-icons">
+            <i class="ri-refresh-line" id="reset-filters"></i>
+            <i class="ri-close-line" id="close-filters"></i>
+        </div>
+    </div>
+    <div class="filter-section">
+        <h3>Employment types</h3>
+        <label><input type="checkbox" name="employment-type" value="Full-time"> Full-time</label>
+        <label><input type="checkbox" name="employment-type" value="Part-time"> Part-time</label>
+        <label><input type="checkbox" name="employment-type" value="On demand"> On demand</label>
+        <label><input type="checkbox" name="employment-type" value="Negotiable"> Negotiable</label>
+      </div>
+      
+    <div class="filter-section">
+        <h3>Experience</h3>
+        <label><input type="radio" name="experience" value="all" checked> All</label>
+        <label><input type="radio" name="experience" value="no experience"> No experience</label>
+        <label><input type="radio" name="experience" value="1 year"> 1 year exp</label>
+        <label><input type="radio" name="experience" value="2 years"> 2 year exp</label>
+        <label><input type="radio" name="experience" value="3 years"> > 3 year exp</label>
+        
+    </div>
+
+    <div class="filter-section">
+        <h3>Roles</h3>
+        <select id="roles">
+            <option value="">Select Roles</option>
+            <option>CEO</option>
+            <option>CTO</option>
+            <option>Project Coordinator</option>
+            <option>Team Leader</option>
+            <option>Software Developer</option>
+            <option>Marketing Strategist</option>
+            <option>Data Analyst</option>
+            <option>Product Owner</option>
+            <option>Graphic Designer</option>
+            <option>Operations Manager</option>
+            <option>Customer Support Specialist</option>
+            <option>Sales Manager</option>
+        </select>
+    </div>
+
+    <div class="filter-section">
+        <h3>Locations</h3>
+        <select id="location-select">
+            <option value="">Select Locations</option>
+        </select>
+    </div>
+
+    <div class="filter-section">
+        <h3>Benefits</h3>
+        <label><input type="checkbox"> Free parking</label>
+        <label><input type="checkbox"> Bonus commission</label>
+        <label><input type="checkbox"> Travel</label>
+        <label><input type="checkbox"> Device support</label>
+        <label><input type="checkbox"> Health care</label>
+        <label><input type="checkbox"> Training</label>
+        <label><input type="checkbox"> Health insurance</label>
+        <label><input type="checkbox"> Retirement plans</label>
+        <label><input type="checkbox"> Paid time off</label>
+        <label><input type="checkbox"> Flexible work schedule</label>
+    </div>
+</div>
+
+    
     <div id="job-list"></div>
     <div id="no-results" style="display: none;">No results found</div>
     <script src="./src/js/create-card.js"></script>
+    <script src="./src/js/filter.js"></script>
 </body>
 </html>
