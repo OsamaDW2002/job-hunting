@@ -93,8 +93,8 @@ const jobs = [
     candidates: 5,
     experience: "1 year",
     salary: "Negotiable",
-    workType: "Full-Time",
-    positionRole: "Developer"
+    workType: "Full-time",
+    positionRole: "CTO"
   },
   {
     imgUrl: "https://newline.tech/wp-content/uploads/2023/07/Profession_-Backend-Developer.png",
@@ -103,8 +103,8 @@ const jobs = [
     candidates: 10,
     experience: "3 years",
     salary: "$4000/month",
-    workType: "Remote",
-    positionRole: "Engineer"
+    workType: "Part-time",
+    positionRole: "Team Leader"
   },
   {
     imgUrl: "https://www.keenesystems.com/hs-fs/hubfs/blog-images/ux-design.jpg?width=900&name=ux-design.jpg",
@@ -113,8 +113,8 @@ const jobs = [
     candidates: 3,
     experience: "2 years",
     salary: "Negotiable",
-    workType: "Part-Time",
-    positionRole: "Designer"
+    workType: "On demand",
+    positionRole: "Graphic Designer"
   }
 ];
 
@@ -139,3 +139,4 @@ searchInput.addEventListener("input", () => {
 
   noResults.style.display = foundMatch ? "none" : "block";
 });
+
