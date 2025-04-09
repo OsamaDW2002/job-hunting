@@ -1,0 +1,53 @@
+.search-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px 0; /* محاذاة العنصر لليسار */
+}
+
+#job-search {
+    width: 100%;
+    padding: 12px 40px 12px 15px; /* Padding لتوفير المساحة للأيقونة */
+    font-size: 16px;
+    border: 1px solid #ddd; /* تحديد الحدود */
+    border-radius: 15px;
+    box-sizing: border-box;
+    outline: none;
+    background-color: #f9f9f9; /* خلفية خفيفة */
+    color: #888;
+    padding-left: 40px;
+}
+
+#job-search:focus {
+    border-color: #4c8bf5; /* تغيير لون الحدود عند التركيز */
+    background-color: #fff; /* تغيير الخلفية عند التركيز */
+}
+
+.ri-search-line {
+    position: absolute;
+    left: 15px; /* الأيقونة على اليسار */
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #aaa;
+}
+
+#job-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.announcement-container {
+    width: 300px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#no-results {
+    text-align: center;
+    font-size: 18px;
+    color: #888;
+}
