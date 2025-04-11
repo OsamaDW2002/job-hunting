@@ -21,11 +21,11 @@
             <div class="drop-input-list-details">
                     <label>
                         <h6>Header</h6>
-                        <input type="text" value="Marketing Manager">
+                        <input type="text" value="Marketing Manager" id="title">
                     </label>
                     <label>
                         <h6>Contant</h6>
-                        <textarea>
+                        <textarea id="contant">
                             type here content data
                         </textarea>
                     </label>
@@ -40,10 +40,6 @@
                 </div>
             </div>
             <div class="drop-input-list-details">
-                <label>
-                    <h6>Header</h6>
-                    <input type="text" value="Marketing Manager">
-                </label>
                 <label>
                     <h6>Contant</h6>
                     <div class="job-type">
@@ -263,13 +259,13 @@
                     <span class="custom-radio"></span>
                     <span>Training</span>
                 </label>
-
             </div>
-
-
+        </div>
+        <div class="btn" >
+            <button class="create-job-btn" id="submit-data" type="button">Create job</button>
         </div>
     </form>
-
+    <script src="src/js/database-init.js"></script>
     <script src="src/js/drop-list-animation.js" type="module"></script>
     <script src="src/js/create-card.js" type="module"></script>
     <script src="src/js/text-editor.js" type="module"></script>
@@ -279,5 +275,6 @@
     <script src="src/js/add-location.js"></script>
     <script src="src/js/add-date.js"></script>
     <script src="src/js/salary.js"></script>
+    <script src="src/js/create-job.js" type="module"></script>
 </body>
 </html>
