@@ -84,8 +84,7 @@ const jobList = document.getElementById("job-list");
 const searchInput = document.getElementById("job-search");
 const noResults = document.getElementById("no-results");
 
-// Example jobs
-let jobs = JSON.parse(localStorage.getItem('data'))
+
 // Render jobs
 jobs.forEach(job => createJobCard(job, jobList));
 
@@ -107,3 +106,4 @@ searchInput.addEventListener("input", () => {
 
   noResults.style.display = foundMatch ? "none" : "block";
 });
+
