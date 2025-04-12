@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/drop-list-input.css">
+    <link rel="stylesheet" href="./src/css/announcement-card.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<form>
+    <div class="drop-input-list-container">
+        <div class="drop-input-list-title">
+            <span>Title</span>
+            <span>headings</span>
+            <div>
+                <img src="./src/assets/icons/drop-list-open.svg" alt="drop list input data">
+            </div>
+        </div>
+        <div class="drop-input-list-details">
+            <label>
+                <h6>Header</h6>
+                <input type="text" value="Marketing Manager" id="title">
+            </label>
+            <label>
+                <h6>Contant</h6>
+                <textarea id="contant">
+
+                    Occaecati est et illo quibusdam accusamus qui. Incidunt aut et molestiae ut facere aut. Est quidem iusto praesentium excepturi harum nihil tenetur facilis. Ut omnis voluptates nihil accusantium doloribus eaque debitis.
+
+                    Key responsibilities
+
+                    Working with agency for design drawing detail, quotation and local production.
+
+                    Produce window displays, signs, interior displays, floor plans and special promotions displays.
+
+                    Change displays to promote new product launches and reflect festive or seasonal themes.
+
+                    Planning and executing the open/renovation/ closing store procedure.
+
+                    Follow‐up store maintenance procedure and keep updating SKU In & Out.
+
+                    Monitor costs and work within budget.
+
+                    Liaise with suppliers and source elements.
+
+                    Why You'll love working here
+
+                    Working with agency for design drawing detail, quotation and local production.
+
+                    Produce window displays, signs, interior displays, floor plans and special promotions displays.
+
+                    Change displays to promote new product launches and reflect festive or seasonal themes.
+
+                    Planning and executing the open/renovation/ closing store procedure.
+
+                    Follow‐up store maintenance procedure and keep updating SKU In & Out.
+
+                    Monitor costs and work within budget.
+
+                    Liaise with suppliers and source elements.
+                </textarea>
+            </label>
+        </div>
+    </div>
+    <div class="drop-input-list-container">
+        <div class="drop-input-list-title">
+            <span>Title</span>
+            <span>headings</span>
+            <div>
+                <img src="./src/assets/icons/drop-list-open.svg" alt="drop list input data">
+            </div>
+        </div>
+        <div class="drop-input-list-details">
+            <label>
+                <h6>Contant</h6>
+                <div class="job-type">
+                    <label class="job-option">
+                        <input type="radio" name="job" value="full-time" >
+                        <span class="custom-radio"></span>
+                        <span>Full-time</span>
+                    </label>
+
+                    <label class="job-option">
+                        <input type="radio" name="job" value="part-time" checked>
+                        <span class="custom-radio"></span>
+                        <span>Part-time</span>
+                    </label>
+                    <label class="job-option">
+                        <input type="radio" name="job" value="full-time" >
+                        <span class="custom-radio"></span>
+                        <span>On Demand</span>
+                    </label>
+
+
+
+                    <label class="job-option">
+                        <input type="radio" name="job" value="part-time">
+                        <span class="custom-radio"></span>
+                        <span>Negotiable</span>
+                    </label>
+
+                </div>
+            </label>
+            <label >
+                <h6>Contant</h6>
+                <div class="experience-group">
+                    <label class="experience-option">
+                        <input type="radio" name="experience" value="0">
+                        <span class="experience-label">No experience</span>
+                    </label>
+
+                    <label class="experience-option">
+                        <input type="radio" name="experience" value="1" checked >
+                        <span class="experience-label">1 year exp</span>
+                    </label>
+
+                    <label class="experience-option">
+                        <input type="radio" name="experience" value="2">
+                        <span class="experience-label">2 year exp</span>
+                    </label>
+
+                    <label class="experience-option">
+                        <input type="radio" name="experience" value="3">
+                        <span class="experience-label">&gt; 3 year exp</span>
+                    </label>
+                </div>
+            </label>
+            <h6>Role</h6>
+            <div class="dropdown">
+                <input type="text" class="input-box" placeholder="Role" id="roleInput" readonly onclick="toggleOptions()" value="CTO">
+                <span class="icon-clear" onclick="clearInput()">✕</span>
+                <span class="icon-toggle" onclick="toggleOptions()">▾</span>
+
+                <div class="options" id="roleOptions">
+                    <div class="option" onclick="selectRole('CEO')">CEO</div>
+                    <div class="option" onclick="selectRole('CTO')">CTO</div>
+                    <div class="option" onclick="selectRole('Project Coordinator')">Project Coordinator</div>
+                    <div class="option" onclick="selectRole('Team Leader')">Team Leader</div>
+                    <div class="option" onclick="selectRole('Software DEveloper')">Software Developer</div>
+                    <div class="option" onclick="selectRole('Marketing Strategist')">Marketing Strategist</div>
+                    <div class="option" onclick="selectRole('Data Analyst')">Data Analyst</div>
+                    <div class="option" onclick="selectRole('Product Owner')">Product Owner</div>
+                </div>
+            </div>
+        </div>
+
+        <h6>Skills</h6>
+        <div class="skills-dropdown" onclick="focusInput()">
+            <div class="selected-skills" id="selectedSkills">
+                <span class="placeholder" id="skillsPlaceholder">Skills</span>
+            </div>
+            <div class="icons">
+                <span onclick="clearAll(event)">✕</span>
+                <span onclick="toggleSkillOptions(event)">▾</span>
+            </div>
+
+            <div class="skills-options" id="skillsOptions">
+                <div onclick="addSkill('UI')">UI</div>
+                <div onclick="addSkill('UX')">UX</div>
+                <div onclick="addSkill('Html')">Html</div>
+                <div onclick="addSkill('JavaScript')">JavaScript</div>
+                <div onclick="addSkill('TypeScript')">TypeScript</div>
+                <div onclick="addSkill('Communication')">Communication</div>
+                <div onclick="addSkill('Problem Solving')">Problem Solving</div>
+                <div onclick="addSkill('Leadership')">Leadership</div>
+            </div>
+        </div>
+
+        <h6>Working schedule</h6>
+        <div class="schedule-dropdown" onclick="focusScheduleInput()">
+            <div class="selected-schedules" id="selectedSchedules">
+                <span class="placeholder" id="schedulePlaceholder">+ Schedule</span>
+            </div>
+            <div class="icons">
+                <span onclick="clearAllSchedules(event)">✕</span>
+                <span onclick="toggleScheduleOptions(event)">▾</span>
+            </div>
+
+            <div class="schedule-options" id="scheduleOptions">
+                <div onclick="addSchedule('Monday to Friday')">Monday to Friday</div>
+                <div onclick="addSchedule('Weekend availability')">Weekend availability</div>
+                <div onclick="addSchedule('Day shift')">Day shift</div>
+            </div>
+        </div>
+
+        <h6>Locations</h6>
+        <div class="multi-location-dropdown" onclick="showLocationOptions()">
+            <div class="location-tags" id="selectedLocations">
+                <span class="placeholder" id="locationPlaceholder">+ Locations</span>
+            </div>
+            <div class="location-icons">
+                <span onclick="clearAllLocations(event)">✕</span>
+                <span onclick="toggleLocationOptions(event)">▾</span>
+            </div>
+
+            <div class="location-options" id="locationOptions">
+                <div onclick="addLocation('Andorra')">Andorra (AD) +376</div>
+                <div onclick="addLocation('United Arab Emirates')">United Arab Emirates (AE) +971</div>
+                <div onclick="addLocation('Afghanistan')">Afghanistan (AF) +93</div>
+                <div onclick="addLocation('Antigua and Barbuda')">Antigua and Barbuda (AG) +1-268</div>
+                <div onclick="addLocation('Anguilla')">Anguilla (AI) +1-264</div>
+                <div onclick="addLocation('Albania')">Albania (AL) +355</div>
+                <div onclick="addLocation('Armenia')">Armenia (AM) +374</div>
+                <div onclick="addLocation('Angola')">Angola (AO) +244</div>
+                <div onclick="addLocation('Canada')">Canada (AM) +374</div>
+                <div onclick="addLocation('United Kingdom')">United Kingdom (AO) +244</div>
+
+            </div>
+        </div>
+
+
+
+
+        <h6>Expired</h6>
+        <div class="datepicker-container">
+            <input type="text" class="date-input" id="dateInput" placeholder="DD/MM/YYYY" readonly onclick="toggleCalendar()" value="09/04/2025">
+            <span class="calendar-icon" onclick="toggleCalendar()">📅</span>
+
+            <div class="calendar-popup" id="calendarPopup">
+                <div class="calendar-header">
+                    <span class="arrow" onclick="changeMonth(-1)">❮</span>
+                    <span id="calendarMonthYear"></span>
+                    <span class="arrow" onclick="changeMonth(1)">❯</span>
+                </div>
+                <div class="calendar-grid" id="calendarDays"></div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <h6>Salary</h6>
+        <div class="salary-options">
+            <div class="option-card " onclick="selectSalary(this)">
+                <div class="icon">⏱️</div>
+                <div class="label">Hourly</div>
+            </div>
+            <div class="option-card selected" onclick="selectSalary(this)">
+                <div class="icon">💰</div>
+                <div class="label">Custom</div>
+            </div>
+        </div>
+
+        <div class="currency-wrapper">
+            <span class="currency-symbol">$</span>
+            <input
+                    type="text"
+                    class="currency-input"
+                    id="currencyField"
+                    placeholder="0.00"
+                    oninput="formatCurrency(this)"
+                    value="97.14"
+            />
+        </div>
+
+
+
+
+
+
+        <h6>Benefits</h6>
+        <div class="benefents">
+
+            <label class="job-option">
+                <input type="radio" name="benefents" value="full-time" checked>
+                <span class="custom-radio"></span>
+                <span>Free parking</span>
+            </label>
+
+            <label class="job-option">
+                <input type="radio" name="benefents" value="part-time">
+                <span class="custom-radio"></span>
+                <span>Travel</span>
+            </label>
+            <label class="job-option">
+                <input type="radio" name="benefents" value="full-time" checked>
+                <span class="custom-radio"></span>
+                <span>Health CAre</span>
+            </label>
+
+
+
+            <label class="job-option">
+                <input type="radio" name="benefents" value="part-time">
+                <span class="custom-radio"></span>
+                <span>Training</span>
+            </label>
+        </div>
+    </div>
+    <div class="btn" >
+        <button class="create-job-btn" id="submit-data" type="button">Save Changes</button>
+    </div>
+</form>
+
+    <script src="src/js/edit-section-loading.js" ></script>
+    <script src="src/js/drop-list-animation.js" type="module"></script>
+    <script src="src/js/create-card.js" type="module"></script>
+    <script src="src/js/text-editor.js" type="module"></script>
+    <script src="src/js/add-role.js"></script>
+    <script src="src/js/add-skill.js"></script>
+    <script src="src/js/add-schedual.js"></script>
+    <script src="src/js/add-location.js"></script>
+    <script src="src/js/add-date.js"></script>
+    <script src="src/js/salary.js"></script>
+</body>
+</html>
