@@ -14,7 +14,7 @@ function createSidebar() {
             <li class="active"><a href="search.html">List</a></li>
             <li><a href="content.html">Details</a></li>
             <li><a href="new-job.html">Create</a></li>
-            <li><a href="#">Edit</a></li>
+            <li><a href="edit-section.html">Edit</a></li>
           </ul>
         </div>
       </div>
