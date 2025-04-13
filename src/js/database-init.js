@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
             experience: "1 year",
             salary: "Negotiable",
             workType: "Full-Time",
-            positionRole: "Developer"
+            positionRole: "Software Developer"
         },
         {
             imgUrl: "https://newline.tech/wp-content/uploads/2023/07/Profession_-Backend-Developer.png",
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
             experience: "3 years",
             salary: "$4000/month",
             workType: "Remote",
-            positionRole: "Engineer"
+            positionRole: "Team Leader"
         },
         {
             imgUrl: "https://www.keenesystems.com/hs-fs/hubfs/blog-images/ux-design.jpg?width=900&name=ux-design.jpg",
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
             experience: "2 years",
             salary: "Negotiable",
             workType: "Part-Time",
-            positionRole: "Designer"
+            positionRole: "Graphic Designer"
         }
     ];
      if (!localStorage.getItem('data')){
