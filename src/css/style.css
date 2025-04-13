@@ -35,3 +35,7 @@ html {
         font-size: 20px;
     }
 }
+body{
+    display: grid;
+    grid-template-columns: 300px auto;
+}

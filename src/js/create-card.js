@@ -86,6 +86,7 @@ const noResults = document.getElementById("no-results");
 
 
 // Render jobs
+let jobs = JSON.parse(localStorage.getItem('data'));
 jobs.forEach(job => createJobCard(job, jobList));
 
 // Search functionality
