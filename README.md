@@ -15,7 +15,7 @@ It dynamically renders job cards and features a collapsible sidebar menu created
 5. **As a user**, I want the interface to be clean and modern.
 
 ## 🌍 Live Demo  
-[Click here to view the Movie Display App](https://osamadw2002.github.io/job-hunting/search.html)
+[Click here to view the Job Display App](https://osamadw2002.github.io/job-hunting/search.html)
 
 ## Instructions on How to Run the Project Locally
 
