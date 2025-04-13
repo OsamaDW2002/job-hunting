@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
             experience: "1 year",
             salary: "Negotiable",
             workType: "Full-Time",
-            positionRole: "Software Developer"
+            positionRole: "CTO"
         },
         {
             imgUrl: "https://newline.tech/wp-content/uploads/2023/07/Profession_-Backend-Developer.png",
